@@ -1,0 +1,13 @@
+#TO ENABLE AND DISABLE AUTOBOOT#
+
+sudo crontab -e
+
+@reboot sh /home/tharun/Desktop/Working/launcher.sh >/home/tharun/logs/cronlog 2>&1
+
+
+
+#TO CHECK THE LOGS#
+
+cd /home/tharun/
+cd logs
+cat cronlog
